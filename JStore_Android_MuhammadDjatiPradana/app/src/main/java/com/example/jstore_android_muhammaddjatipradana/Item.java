@@ -64,4 +64,16 @@ public class Item {
     public void setSupplier(Supplier supplier) {
         this.supplier = supplier;
     }
+
+    public String toString()
+    {
+        return "= Item ===================================" +
+                "\nItem ID       : " + getId() +
+                "\nItem Name     : " + getName() +
+                "\nItem Price    : " + getPrice() +
+                "\nItem Category : " + getCategory() +
+                "\nItem Status   : " + getStatus() +
+                "\nSupplier      : " + getSupplier().getName() +
+                "\n==========================================";
+    }
 }

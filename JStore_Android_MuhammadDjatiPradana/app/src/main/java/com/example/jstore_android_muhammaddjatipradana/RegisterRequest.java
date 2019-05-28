@@ -7,7 +7,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class RegisterRequest extends StringRequest {
-    private static final String Regis_URL = "http://192.168.137.184:8080/newcustomer";
+    private static final String Regis_URL = "http://192.168.1.6:8080/newcustomer";
     private Map<String, String> params;
 
     public RegisterRequest(String name, String email, String password, Response.Listener<String> listener){
@@ -17,7 +17,7 @@ public class RegisterRequest extends StringRequest {
         params.put("email", email);
         params.put("username", "defaultUsername");
         params.put("password", password);
-        params.put("year", "2019");
+        params.put("year", "1999");
     }
 
     @Override

@@ -54,4 +54,14 @@ public class Supplier {
     public void setLocation(Location location) {
         this.location = location;
     }
+
+    public String toString()
+    {
+        return "= Location ===============================" +
+                "\nName      : " + name +
+                "\nEmail     : " + email +
+                "\nTelephone : " + phoneNumber +
+                "\nLocation  : " + location.getCity() + ", " + location.getProvince() +
+                "\n==========================================";
+    }
 }

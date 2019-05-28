@@ -5,7 +5,7 @@ public class Location {
     private String description;
     private String city;
 
-    public Location(String province, String description, String city)
+    public Location(String province, String city, String description)
     {
         this.province=province;
         this.description=description;
@@ -16,12 +16,16 @@ public class Location {
         return province;
     }
 
+    public String getCity(){
+        return city;
+    }
+
     public String getDescription(){
         return description;
     }
 
-    public String getCity(){
-        return city;
+    public void setProvince(String province) {
+        this.province = province;
     }
 
     public void setCity(String city) {
@@ -32,7 +36,12 @@ public class Location {
         this.description = description;
     }
 
-    public void setProvince(String province) {
-        this.province = province;
+    public String toString()
+    {
+        return "= Location ===============================" +
+                "\nProvince      : " + province +
+                "\nCity          : " + city +
+                "\nDescription   : " + description +
+                "\n==========================================";
     }
 }
